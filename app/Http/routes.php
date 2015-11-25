@@ -20,12 +20,12 @@ Route::get('/login', 'Auth\AuthController@getLogin');
 Route::post('/login', 'Auth\AuthController@postLogin');
 # Process logout
 Route::get('/logout', 'Auth\AuthController@getLogout');
-# logout confirm
-Route::get('/logout/confirm', function(){
+// # logout confirm
+// Route::get('/logout/confirm', function(){
 
-        \Session::flash('flash_message','Your settings were updated.');
-        return redirect('/');
-});
+//         \Session::flash('flash_message','Your settings were updated.');
+//         return redirect('/');
+// });
 
 # Show registration form
 Route::get('/register', 'Auth\AuthController@getRegister');
@@ -34,6 +34,10 @@ Route::post('/register', 'Auth\AuthController@postRegister');
 
 // END AUTHENTICATION STUFF
 
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('/settings', 'Settings@getEdit');
+    Route::post('/settings', 'Settings@postEdit');
+});
 // // Registration Routes
 // Route::get('/register/create', 'Register@getCreate');
 // Route::post('/register/create', 'Register@postCreate');
@@ -44,8 +48,8 @@ Route::post('/register', 'Auth\AuthController@postRegister');
 // Settings Routes
 // Settings are created at registration these routes edit them.
 // Route::get('/settings/{user_id}', 'Settings@show');
-Route::get('/settings/{id}', 'Settings@getEdit');
-Route::post('/settings', 'Settings@postEdit');
+// Route::get('/settings/{id}', 'Settings@getEdit');
+// Route::post('/settings', 'Settings@postEdit');
 // Route::delete('/settings/{user_id}', 'Settings@destroy');
 
 // Grocery Run Routes

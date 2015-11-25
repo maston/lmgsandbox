@@ -4,10 +4,6 @@
     @include('layouts.nav_login')
 @stop
 
-@section('kpi-bar')
-    @include('layouts.kpi_login')
-@stop
-
 @section('content')
 
     <p>Already have an account? <a href='/login'>Login here...</a></p>

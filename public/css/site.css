@@ -115,3 +115,57 @@ main {
     background-color:yellow;
     font-weight:bold;
 }
+
+
+/* 11.24.2015 */
+/*
+.form-control .email {
+  width:50%;
+}*/
+
+.login-form {
+      width: 50%;
+    margin: auto;
+        background: gray;
+        margin-bottom: 2em;
+}
+
+.login-logo {
+      margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.login-heading {
+/*    font-weight: bold;*/
+    font-size: 40px;
+    line-height: 1em;
+    text-align: center;
+}
+
+.login-form-inputs {
+      padding-left: 2em;
+    padding-right: 2em;
+}
+
+.login-submit {
+    float:right;
+}
+
+.login-panel-footer {
+  clear: both;
+}
+
+.or {
+    background: #d9d9d9;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 9px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 25px;
+  }

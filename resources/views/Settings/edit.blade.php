@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('nav')
-    @include('layouts.nav', [$nav_gameboard = '', $nav_grocery_run = '', $nav_metrics = '', $nav_settings = 'active'])
+    @include('layouts.nav', [$nav_gameboard = '', $nav_grocery_run = '', $nav_metrics = '', $nav_settings = 'active', $nav_register = '', $nav_login = ''])
 @stop
 
 @section('content')
@@ -10,7 +10,7 @@
 	<h3>User Settings</h3>
     <form class="settings-form" method="POST" action="/settings">
     <input type='hidden' value='{{ csrf_token() }}' name='_token'>
-    <input type='hidden' value='{{ $user_info['id'] }}' name='user_id'>
+    <!-- <input type='hidden' value='{{ $user_info['id'] }}' name='user_id'> -->
     	<fieldset>
     		<legend>Average Spend Settings</legend>
     		<label for="bfast_spend">Breakfast Spend (in $) :</label>

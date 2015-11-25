@@ -58,14 +58,15 @@ class Settings extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function getEdit($id)
+    public function getEdit()
     {
         $nav_gameboard = '';
         $nav_settings = 'active';
         $nav_grocery_run = '';
         $nav_metrics = '';
 
-        $user_info = \LMG\User::find($id);
+        // $user_info = \LMG\User::find($id);
+        $user_info = \Auth::user();
 
         return View('Settings.edit')
             ->with('user_info', $user_info)
@@ -86,7 +87,7 @@ class Settings extends Controller
     {
         // var_dump($request);
          // Validation
-        $user_info = \LMG\User::find($request['user_id']);
+        $user_info = \Auth::user();
         $user_info->bfast_spend = $request->bfast_spend;
         $user_info->lunch_spend = $request->lunch_spend;
         $user_info->dinner_spend = $request->dinner_spend;
@@ -95,7 +96,7 @@ class Settings extends Controller
         $user_info->save();
         // return $user_info;
         \Session::flash('flash_message','Your settings were updated.');
-        return redirect('/settings/'.$user_info->id);
+        return redirect('/settings');
     }
 
     /**
