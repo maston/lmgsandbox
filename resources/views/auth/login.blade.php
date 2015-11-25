@@ -27,7 +27,7 @@
         {!! csrf_field() !!}
     <div class="login-form-inputs">
         <div class='form-group'>
-            <input placeholder='Email' name='email' class='form-control email' type='email' value='{{ old('email') }}'>
+            <input placeholder='Email' name='email' class='form-control' type='email' value='{{ old('email') }}'>
             <!-- <label for='email'>Email</label>
             <input type='text' name='email' id='email' value='{{ old('email') }}'> -->
         </div>
