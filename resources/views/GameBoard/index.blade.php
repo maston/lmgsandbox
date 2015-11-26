@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('nav')
-	@include('layouts.nav_main', [$nav_gameboard = 'active', $nav_grocery_run = '', $nav_metrics = '', $nav_settings = ''])
+	@include('layouts.nav', [$nav_gameboard = 'active', $nav_grocery_run = '', $nav_metrics = '', $nav_settings = ''])
 @stop
 
 @section('content')

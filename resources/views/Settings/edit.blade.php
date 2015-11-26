@@ -13,18 +13,56 @@
     <!-- <input type='hidden' value='{{ $user_info['id'] }}' name='user_id'> -->
     	<fieldset>
     		<legend>Average Spend Settings</legend>
+  <div class="form-group">
+    <label  for="bfast_spend">Breakfast (in dollars):</label>
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input type="number" class="form-control spend-input" name="bfast_spend" id="bfast_spend" placeholder="Amount" value="{{ old('bfast_spend',$user_info['bfast_spend']) }}">
+    </div>
+  </div>
+<!--   <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div> -->
+  <!-- 
     		<label for="bfast_spend">Breakfast Spend (in $) :</label>
-    		<input type="number" name="bfast_spend" id="bfast_spend" class="input-num-parameter"  value="{{ old('bfast_spend',$user_info['bfast_spend']) }}"> 
-    		<br>
-    		<label for="lunch_spend">Lunch Spend (in $) :</label>
+    		<input type="number" name="bfast_spend" id="bfast_spend" class="form-control"  value="{{ old('bfast_spend',$user_info['bfast_spend']) }}"> -->
+<!--             <br> -->
+  <div class="form-group">
+    <label  for="lunch_spend">Lunch (in dollars):</label>
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input type="number" class="form-control spend-input" name="lunch_spend" id="lunch_spend" placeholder="Amount" value="{{ old('lunch_spend',$user_info['lunch_spend']) }}">
+    </div>
+  </div>
+<!--     		<label for="lunch_spend">Lunch Spend (in $) :</label>
     		<input type="number" name="lunch_spend" id="lunch_spend" class="input-num-parameter"  value="{{ old('lunch_spend',$user_info['lunch_spend']) }}"> 
-    		<br>
-    		<label for="dinner_spend">Dinner Spend (in $) :</label>
+    		<br> -->
+
+  <div class="form-group">
+    <label  for="dinner_spend">Dinner (in dollars):</label>
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input type="number" class="form-control spend-input" name="dinner_spend" id="dinner_spend" placeholder="Amount" value="{{ old('dinner_spend',$user_info['dinner_spend']) }}">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label  for="coffee_spend">Coffee (in dollars):</label>
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input type="number" class="form-control spend-input" name="coffee_spend" id="coffee_spend" placeholder="Amount" value="{{ old('coffee_spend',$user_info['coffee_spend']) }}">
+    </div>
+  </div>
+
+<!--     		<label for="dinner_spend">Dinner Spend (in $) :</label>
     		<input type="number" name="dinner_spend" id="lunch_spend" class="input-num-parameter"  value="{{ old('dinner_spend',$user_info['dinner_spend']) }}"> 
     		<br>
     		<label for="coffee_spend">Coffee Spend (in $) :</label>
     		<input type="number" name="coffee_spend" id="coffee_spend" class="input-num-parameter" value="{{ old('coffee_spend',$user_info['coffee_spend']) }}"> 
-    	</fieldset>
+ -->    	</fieldset>
     	<fieldset>
     		<legend>Optional Settings</legend>
     		<label for="zipcode">Zipcode :</label>

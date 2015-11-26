@@ -166,15 +166,31 @@ main {
     padding-right: 2em;
 }*/
 
-.or {
-    background: #d9d9d9;
-    border-radius: 12px;
-    color: #fff;
-    font-size: 9px;
-    font-weight: bold;
-    height: 25px;
-    line-height: 27px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 25px;
-  }
+.carton-reverse-img {
+    background-image: url(/img/cartonReverse.svg);
+    height:300px;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    margin-top: 2em;
+/* background: url(../img/cartonReverse.svg) no-repeat 2% 55%/48% auto;
+*/}
+.peeps-img {
+  background-image: url(/img/peeps.svg);
+  height:100px;
+  background-repeat: no-repeat;
+  float:left;
+}
+
+.registration-intro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.registration-intro-button {
+  float:right;
+  margin-bottom: .5em;
+}
+
+.input-group .form-control  {
+  width:125px;
+}

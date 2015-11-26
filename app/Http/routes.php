@@ -11,7 +11,17 @@
 |
 */
 // home screen for auth testing
-Route::get('/', 'GameBoard@getIndex');
+
+Route::get('/', function(){
+    if(Auth::check()) {
+    $user_info = \Auth::user();
+    return view('GameBoard.index')
+        ->with('user_info', $user_info);
+    }
+    else {
+        return view('home');
+    }
+});
 
 // START AUTHENTICATION STUFF
 # Show login form
@@ -33,6 +43,10 @@ Route::get('/register', 'Auth\AuthController@getRegister');
 Route::post('/register', 'Auth\AuthController@postRegister');
 
 // END AUTHENTICATION STUFF
+
+// Registration Flow - Settings
+// Route::get('/register/settings', 'Register@getSettings');
+// Route::post('/register/settings', 'Settings@postEdit');
 
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/settings', 'Settings@getEdit');
@@ -126,4 +140,10 @@ Route::get('/confirm-login-worked', function() {
 
     return;
 
+});
+
+Route::get('/practice', function(){
+    $user_info = \Auth::user();
+    return view('Register.intro')
+        ->with('user_info', $user_info);
 });

@@ -60,20 +60,20 @@ class Settings extends Controller
      */
     public function getEdit()
     {
-        $nav_gameboard = '';
-        $nav_settings = 'active';
-        $nav_grocery_run = '';
-        $nav_metrics = '';
+        // $nav_gameboard = '';
+        // $nav_settings = 'active';
+        // $nav_grocery_run = '';
+        // $nav_metrics = '';
 
         // $user_info = \LMG\User::find($id);
         $user_info = \Auth::user();
 
         return View('Settings.edit')
-            ->with('user_info', $user_info)
-            ->with('nav_gameboard', $nav_gameboard)
-            ->with('nav_settings', $nav_settings)
-            ->with('nav_grocery_run', $nav_grocery_run)
-            ->with('nav_metrics', $nav_metrics);
+            ->with('user_info', $user_info);
+            // ->with('nav_gameboard', $nav_gameboard)
+            // ->with('nav_settings', $nav_settings)
+            // ->with('nav_grocery_run', $nav_grocery_run)
+            // ->with('nav_metrics', $nav_metrics);
     }
 
     /**
