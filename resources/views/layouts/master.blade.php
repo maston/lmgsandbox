@@ -8,7 +8,7 @@
 	<meta name="keywords" content="obesity, save money, diet, health game, health tracker">
 	<meta name="description" content="Game that helps you change your eating behaviors... etc..">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<!-- <link rel="stylesheet" href="css/lavish-bootstrap.css"> -->
+	<link rel="stylesheet" href="css/lavish-bootstrap.css">
 	<link rel="stylesheet" href="/css/site.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

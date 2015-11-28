@@ -21,13 +21,13 @@ http://getbootstrap.com/examples/sticky-footer-navbar/
 
 /* begin general styles for site */
 footer { 
-    background-color:#35324E; /* dark purpley blue */
+/*    background-color:#35324E; *//* dark purpley blue */
     border-radius:4px;
     margin-top: 0px;
 }
 
 footer #footer-copyright {
-    color: #A79560; /* beige */
+    /*color: #A79560;*/ /* beige */
     text-align: center;     
 }
 /* Custom page CSS
@@ -71,49 +71,108 @@ code {
 }
 
 .kpi-bar .kpi-total-save {
-    color: #fff;
+    color: #617992;
 }
 
 .kpi-global-total-save {
     float:right;
-    color: #fff;
+    color: #617992;
 }
 /*#wrap { background: gray; position: absolute; bottom: 20px; top: 20px; right: 100px; left: 100px }
 #wrap .content { height: 100% }*/
 
 main {
-    background-color: #50686A;
+/*    background-color: #50686A;*/
     border-radius: 4px;
     margin-top: .25em;
     margin-bottom: .25em;
 }
 
 .settings-form {
-    /*height:500px;*/
-    background-color: #BBE3D7;
+    padding-left: 1em;
+    padding-right: 1em;
+/*    background-color: #BBE3D7;*/
+
 
     margin-top: 1em;
     margin-bottom: 1em;
     border-radius: 4px;
 }
 
+.settings-form legend {
+      background: #35324F;
+    border-radius: 4px;
+    color: white;
+    padding-left: .25em;
+}
+
+.settings-form span {
+  font-style: italic;
+}
+
+.settings-save-btn {
+  margin-top:1em;
+  margin-bottom:1em;
+/*  float:right;*/
+}
 .settings-info {
         /*height:500px;*/
-    background-color: #BBE3D7;
+/*    background-color: #BBE3D7;*/
     margin-top: 1em;
     margin-bottom: 1em;
     border-radius: 4px;
+    border: solid 1px;
+/*    padding-top: 1em;*/
+    padding-left: .25em;
+    padding-right: .25em;
+    padding-bottom: 1em;
+}
+
+.settings-info h3 {
+  margin-top:0px;
+}
+.settings-info-defaulted {
+    font-style: italic;
+}
+
+.settings-info-takeout-img {
+    float:left;
+    border-radius: 4px;
+    padding: 0 .5em;
+
+}
+
+.settings-info-earth-img {
+    float:right;
+    border-radius: 4px;
+    padding:.5em;
+}
+
+.settings-info-text {
+  padding-left: .75em
+}
+
+.settings-info-header {
+  padding-left: .25em
+}
+
+.clear-all {
+  clear:both;
 }
 
 .flash_message {
-    width:100%;
+    width:35%;
+    margin-right:auto;
+    margin-left:auto;
+    display:block;
     text-align:center;
     padding:5px;
+    border-radius: 5px;
 /*    position:fixed;
     top:0;
     left:0;*/
-    background-color:yellow;
-    font-weight:bold;
+    background-color:#D66100;
+    color:white;
 }
 
 
